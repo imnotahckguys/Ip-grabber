@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Grabber</title>
+    <script>
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                console.log('IP Address: ', data.ip);
+            });
+    </script>
+</head>
+<body>
+    <h1>Welcome to the IP Grabber</h1>
+</body>
+</html>
